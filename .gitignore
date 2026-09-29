@@ -1,0 +1,10 @@
+.venv
+.venv.nosync/
+models/
+__pycache__/
+whisper.log
+
+# Private to this Mac, not for the public repo
+CLAUDE.md
+memory/
+.DS_Store
