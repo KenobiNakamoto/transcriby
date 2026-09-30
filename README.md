@@ -140,11 +140,17 @@ python3 -m venv .venv.nosync && .venv.nosync/bin/pip install pyobjc-framework-Co
 It does not need Xcode. The Xcode licence on this Mac is not accepted, which blocks
 `/usr/bin/python3` and `swiftc`, so neither was used.
 
-### The countdown is not in this repository
+### The countdown is a second repository
 
-`show.py` starts `timer.py` from a sibling folder named `stage-timer`. That program is separate,
-and it is not published. Without it everything else works and the timer controls stay at `--:--`.
-`--no-timer` leaves the timer out on purpose.
+`show.py` starts `timer.py` from a sibling folder named `stage-timer`. Clone it next to this one:
+
+```sh
+git clone https://github.com/KenobiNakamoto/stage-timer.git
+```
+
+Put the two folders side by side, so that `stage-timer` is the sibling of this folder. Without it
+everything else still works and the timer controls stay at `--:--`. `--no-timer` leaves the timer
+out on purpose.
 
 ## The three parts
 
